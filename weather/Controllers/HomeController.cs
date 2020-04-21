@@ -2,8 +2,10 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
@@ -20,21 +22,7 @@ namespace weather.Controllers
             return View(weather_list);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-        static List<Weather> GetWeather(string path)
+        public List<Weather> GetWeather(string path)
         {
             try
             {
@@ -88,26 +76,20 @@ namespace weather.Controllers
                 }
                 else
                 {
-                    throw new Exception("error StatusCode:" + response.StatusCode.ToString());
+                    throw new Exception("error:" + response.StatusCode.ToString());
                 }
 
                 return weather_list;
             }
             catch (Exception e)
             {
+                using (FileStream fs = System.IO.File.Create(System.AppDomain.CurrentDomain.BaseDirectory + "/error_log.txt"))
+                {
+                    byte[] info = new UTF8Encoding(true).GetBytes(e.Message);
+                    fs.Write(info, 0, info.Length);
+                }
                 return null;
             }
-
-
-            //HttpClient client = new HttpClient();
-            //dynamic product = null;
-            //HttpResponseMessage response = client.GetAsync(path);
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    //product = await response.Content.ReadAsAsync();
-            //    product = response.Content.ReadAsStringAsync();
-            //}
-            //return product;
         }
     }
 }

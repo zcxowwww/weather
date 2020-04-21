@@ -19,7 +19,6 @@ D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Owin.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\EntityFramework.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Microsoft.Owin.Security.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
-D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\weather.pdb
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Newtonsoft.Json.xml
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\System.Web.Helpers.xml
@@ -36,7 +35,6 @@ D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Microsoft.Owin.xml
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\EntityFramework.xml
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Microsoft.Owin.Security.xml
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
-D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\System.Web.Helpers.resources.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\System.Web.Razor.resources.dll
@@ -50,7 +48,6 @@ D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\System.Web.Optimiz
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\Microsoft.Owin.resources.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\EntityFramework.resources.dll
 D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\Microsoft.Owin.Security.resources.dll
-D:\learn_data\c_sharp\weather\weather.Tests\bin\Debug\zh-Hant\Microsoft.Owin.Host.SystemWeb.resources.dll
 D:\learn_data\c_sharp\weather\weather.Tests\obj\Debug\weather.Tests.csprojResolveAssemblyReference.cache
 D:\learn_data\c_sharp\weather\weather.Tests\obj\Debug\weather.Tests.dll
 D:\learn_data\c_sharp\weather\weather.Tests\obj\Debug\weather.Tests.pdb

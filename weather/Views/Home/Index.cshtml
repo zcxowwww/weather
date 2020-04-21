@@ -3,27 +3,29 @@
 }
 @model List<Weather>
 
-@foreach (Weather entity in Model)
-{
-    <table border="1">
-        <tr>
-            <td><h2>@entity.city_name</h2></td>
-        </tr>
-        @foreach (Weather.Status status in entity.status_ar)
-        {
+@if (Model != null) { 
+    foreach (Weather entity in Model)
+    {
+        <table border="1">
             <tr>
-                <td>@status.starttime</td>
-                <td>@status.endtime</td>
-                <td>@status.text</td>
+                <td><h2>@entity.city_name</h2></td>
             </tr>
-        }
-        @foreach (Weather.Temperature temperature in entity.temperature_ar)
-        {
-            <tr>
-                <td>@temperature.starttime</td>
-                <td>@temperature.endtime</td>
-                <td>@temperature.text</td>
-            </tr>
-        }
-    </table>
+            @foreach (Weather.Status status in entity.status_ar)
+            {
+                <tr>
+                    <td>@status.starttime</td>
+                    <td>@status.endtime</td>
+                    <td>@status.text</td>
+                </tr>
+            }
+            @foreach (Weather.Temperature temperature in entity.temperature_ar)
+            {
+                <tr>
+                    <td>@temperature.starttime</td>
+                    <td>@temperature.endtime</td>
+                    <td>@temperature.text</td>
+                </tr>
+            }
+        </table>
+    }
 }
